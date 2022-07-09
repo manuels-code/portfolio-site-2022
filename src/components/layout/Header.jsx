@@ -31,7 +31,7 @@ const menuLinks = [
 
 const Header = () => {
   return (
-    <div className="fixed left-0 top-0 w-full bg-app-base-1 h-20">
+    <div className="fixed left-0 top-0 w-full bg-app-base-1 lg:bg-transparent h-20">
       <Container>
         <div className="flex items-center h-full justify-between">
           <a className="text-white font-bold tracking-[1px]" href="/">
