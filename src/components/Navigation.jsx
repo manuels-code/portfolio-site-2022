@@ -19,7 +19,7 @@ const Navigation = ({ menuLinks }) => {
 
   // pending check the media queries from tailwind
   return (
-    <nav className="relative bg-app-base-1">
+    <nav className="relative bg-app-base-1 lg:bg-transparent">
 
       <button
         onClick={toggleMenu}
@@ -27,7 +27,7 @@ const Navigation = ({ menuLinks }) => {
         <AiOutlineMenu /> MENU
       </button>
 
-      <ul style={style} className="fixed left-0 top-20 w-full bg-app-base-1 lg:relative lg:flex lg:top-0">
+      <ul style={style} className="fixed left-0 top-20 w-full bg-app-base-1 lg:bg-transparent lg:relative lg:flex lg:top-0">
         {menuLinks.map(({ page, link }) => (
           <li key={page} className="list-none capitalize text-white">
             <a className="inline-block px-6 py-3 hover:bg-app-base-2 w-full lg:px-4 lg:hover:bg-transparent" href={link}>{page}</a>
